@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array handson 4</title>
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+        padding: 40px;
+        }
+    h3{
+        color:black;
+        font-weight:bolder;
+
+    }   
+    pre{
+        color: blue;
+    } 
+</style>
+<body>
+    <h3>Q. Find the product </h3>
+    <pre>const Find_Prod = (array, N) => 
+        {
+          let product=1;
+          for(let i=0; i < N; i++)
+          {
+            product=product*array[i];
+          }
+          return product;
+        };</pre>
+    <h3>Q. 2 Find the Sum </h3>
+    <pre>const Find_Sum = (array, N) => 
+        {
+          let sum=0;
+          for(let i=0; i < N; i++)
+          {
+            sum+=array[i];
+          }
+          return sum;
+        };        
+         </pre>
+    <h3>Q.3 Count Ocurences </h3>
+    <pre>const findCount = (N, K, Arr) => 
+        {
+          let counter=0;
+          for(let j=0; j < N;j++)
+          {
+            if(Arr[j]===K)
+            {
+              counter++;
+            }
+          }
+          return counter;
+        };
+          </pre>
+    <h3>Q.4 Even Odd</h3>      
+    <pre>
+        const findEvenOdd = (N, Arr) => 
+        {
+          let B=[0,0];
+          for(let i=0; i < N; i++)
+          {
+            if(Arr[i]%2===0)
+            {
+              B[0]+=Arr[i];
+            }
+            else
+            {
+              B[1]+=Arr[i];
+            }
+          }
+          return B;
+        };
+    </pre>
+     <h3>Q.5 Find wheather the number is present or not  </h3>
+    <pre>const Find_Num = (array,N,M) => 
+    {
+  for(let i=0; i < N; i++)
+  {
+    if(array[i]===M)
+    {
+      return 'YES';
+    }
+  }
+  return 'NO';
+};
+ </pre>
+    <h3>Q.6 Higher Age  </h3>
+    <pre>
+        const highAge = (N, Arr) => 
+        {
+        let B=[];
+        let j=0;
+        for(let i=0; i<N;i++)
+        {
+        if(Arr[i]>=18)
+        {
+        B[j]=Arr[i];
+        j++;
+        }
+        }
+        return B;
+        };</pre>
+    <h3>Q.7 Increment the Array Elements </h3>
+    <pre>const Inc_Arr = (array,N) => 
+        {
+        var answer = "";
+        for(let i=0; i<p> <</p>N;i++)
+        {
+         array[i]+=1;
+        }
+      for(let i=0; i<N;i++)
+        <pre>{
+        answer = answer + array[i] + " ";
+        }
+        console.log(answer);
+        };</pre></pre
+        <p></p><h3>Q.8 Pass or fail </h3>
+
+    <pre>const isAllPass = (N, Arr) => 
+        {for(let i=0;i <N;i++)<pre> {
+            if(Arr[i]<32){
+           <pre> return "NO";
+              }
+            }
+            return "YES";
+        };</pre></pre>
+    </pre>
+    <h3>Q.9 Unique color Shirt </h3>
+    <pre>          function Unique_Shirts (arr,N) {
+         // creating the freq array which will act as counter of every element
+           let freq=[1001];
+           // intilize it with zero 
+           for(let i=0;i<1001;i++)<p></p> {
+             freq[i]=0;
+           }
+           // increase the counter of color occurs
+           for(let i=0;i<N;i++)<p></p> {
+             freq[arr[i]]++;
+           }
+          let ans=0;
+          
+          for(let i=0;i<1001;i++)<p></p> {
+            if(freq[i]===1) {
+              ans++;
+            }
+          }
+          return ans;
+        
+        }
+        </pre>
+    <h3>Q.10 Min or Max </h3>
+    <pre> function arrayMin(arr) 
+        {
+        let min=arr[0]; 
+        for(let i=0; i < arr.length; i++)
+        {
+        if(arr[i+1] < min)
+        {
+         min=arr[i+1];
+         }
+        }
+        return min;
+        }
+        function arrayMax(arr) {
+        let max=arr[0];
+        for (let i=0; i < arr.length; i++)
+        {
+        if(arr[i+1] > max)
+        {
+        max=arr[i+1];
+        }
+        }
+        return max;
+        } </pre>
+    <h3>Q.11 Birthday Game </h3>
+    <pre>function Birthday_Game(arr,D ,M) {
+        let count=0; let N=arr.length;
+        for(let i=0; i < N; i++)
+        {
+          let j=0; let k=i; let sum=0;
+          while(j < M)
+          {
+            sum = sum + arr[k];
+            j++; k++;
+          }
+          if(sum===D)
+          {
+            count++;
+          }
+        }
+        return count;
+  }
+</pre>
+    
+</body>
+</html>
